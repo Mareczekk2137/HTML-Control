@@ -1,0 +1,36 @@
+{
+    "name": "ElementRemover",
+    "description": "ElementRemover",
+    "version": "1.0",
+    "manifest_version": 3,
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
+      },
+    
+    "permissions": ["storage", "activeTab", "scripting", "cookies", "tabs", "webNavigation", "downloads", "contextMenus"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["we_on_page.js"]
+      }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/ElementsBlockerIcon.png",
+            "32": "/images/ElementsBlockerIcon.png",
+            "48": "/images/ElementsBlockerIcon.png",
+            "128": "/images/ElementsBlockerIcon.png"
+        }
+    },
+    "icons": {
+        "16": "/images/ElementsBlockerIcon.png",
+        "32": "/images/ElementsBlockerIcon.png",
+        "48": "/images/ElementsBlockerIcon.png",
+        "128": "/images/ElementsBlockerIcon.png"
+      },
+    "options_page": "options.html"
+}

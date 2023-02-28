@@ -1,0 +1,12 @@
+
+body{
+  width: 150px;
+  height: 300px;
+}
+
+button{
+  width: 70px;
+  height: 30px;
+}
+
+.c:only-child{}
