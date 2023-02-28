@@ -8,7 +8,7 @@
     ],
     "background": {
         "service_worker": "background.js"
-      },
+    },
     
     "permissions": ["storage", "activeTab", "scripting", "cookies", "tabs", "webNavigation", "downloads", "contextMenus"],
     "content_scripts": [
